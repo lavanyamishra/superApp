@@ -6,6 +6,7 @@
     padding: 6vw;
     box-sizing: border-box;
     text-align: center;
+    
 }
 .body p{
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ form label input{
 form .error{
     color: red;
     font-size: 12px;
-    align-items:start;
+  
     
 }
 .footer p{

@@ -30,24 +30,27 @@ const Form=() =>{
         }
         if(!(formValues.username.trim().length>0)){
           setUserNameError(true)
+          valid = false;
           
       }else{
           setUserNameError(false)
       }
       if(!(formValues.email.trim().length>0)){
         setEmailError(true)
-     
+        valid = false;
     }else{
         setEmailError(false)
     }
-    if(!(formValues.mobile.trim().length>0)){
+    if(!(formValues.mobile.trim().length===10)){
       setMobileError(true)
+      valid = false;
    
   }else{
       setMobileError(false)
   }
   if(!(formValues.check)){
     setSignUpError(true)
+    valid = false;
  
 }else{
     setSignUpError(false)
@@ -72,7 +75,8 @@ if(valid)
             <input type="tel" placeholder='Mobile'  name="mobile"onChange={(e)=>handleChange(e)} />
             {mobileError?<p className='error'>Field Required</p>:<></>}
             <label>
-                <input type="checkbox"name='check'onChange={(e)=>SetformValues({...formValues,[e.target.name]:e.target.checked})}  />
+                <input type="checkbox"name='check'onChange={(e)=>SetformValues( {...formValues,[e.target.name]:e.target.checked})}  />
+            
                 Share my registration data with Superapp
             </label>
             {signUpError?<p className='error'>Check this box if you want to proceed</p>:<></>}
