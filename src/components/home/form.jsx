@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import  './form.css'
+
 const Form=() =>{
   
   const[formValues,SetformValues]=useState(
@@ -58,7 +59,7 @@ const Form=() =>{
 if(valid)
 {
     window.localStorage.setItem("userData",JSON.stringify(formValues))
-   
+ 
 }
   }
   return (
