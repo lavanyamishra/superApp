@@ -95,12 +95,13 @@
   }
   .categories_item h2 {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: -3rem;
   }
   .categories_item img {
-    height: 15vh;
-    width: 12vw;
+    height: 10vh;
+    width: 11vw;
+    margin-bottom: 1rem;
   }
   .error {
     color: rgb(236, 6, 6);
