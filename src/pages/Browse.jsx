@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 const Browse = () => {
   const navigate = useNavigate()
     const handleClick = ()=>{
-        navigate('/movies')
+        navigate('/Movies')
     }
   return (
    <div className="main">
