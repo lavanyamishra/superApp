@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import  './form.css'
-
+import { useNavigate } from 'react-router-dom'
 const Form=() =>{
-  
+  const navigate = useNavigate()
   const[formValues,SetformValues]=useState(
     {
       name:"",
@@ -59,6 +59,7 @@ const Form=() =>{
 if(valid)
 {
     window.localStorage.setItem("userData",JSON.stringify(formValues))
+    navigate('/selectcategory')
  
 }
   }

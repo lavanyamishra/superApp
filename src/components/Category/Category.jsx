@@ -3,9 +3,10 @@ import "./Category.css"
 import Chips from "./Chips"
 import Cards from './Cards'
 import { categories } from './CategoriesData.jsx'
-
+import { useNavigate } from 'react-router-dom'
 
 const Category = () => {
+  const navigate = useNavigate()
     const [select,setSelect]=useState([]);
     const [error, setError] = useState(false);
     const handleSelect = (elem) => {
@@ -19,9 +20,14 @@ const Category = () => {
          else {
           setError(false);
           window.localStorage.setItem("userGenere", JSON.stringify(select));
+         
           
+              navigate('/Browse')
+         }
+          
+        
         }
-      };
+      
   return (
     <div className="category_main">
         <div className="category_leftcontent">
