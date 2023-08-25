@@ -1,0 +1,32 @@
+.timer_main {
+    width: 60vw;
+    height: 30vh;
+  box-sizing: border-box;
+    position: absolute;
+    margin-top: 6px;
+    padding: 12px;
+    background: #1e2343;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .timer {
+    width: 40%;
+    height: 100%;
+  }
+  .timer_container {
+    margin: 0.5rem auto;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: #191e39;
+    box-shadow: -3px -7px 16px rgba(95, 88, 88, 0.23),
+      inset 0px 6px 26px rgba(0, 0, 0, 0.61);
+    display: grid;
+    place-items: center;
+  }
+  .timer_container p {
+    color: white;
+  }
+ 

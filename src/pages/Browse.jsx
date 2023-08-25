@@ -2,6 +2,8 @@ import React from 'react'
 import "./Browse.css"
 import Info from '../components/Browse/Info'
 import Weather from '../components/Browse/Weather'
+import Timer from '../components/Browse/Timer'
+import Notes from "../components/Browse/Notes"
 const Browse = () => {
   return (
    <div className="main">
@@ -9,10 +11,11 @@ const Browse = () => {
     <div>
          <Info/>
           <Weather/>
-        {/* <Timer/>  */}
+        <Timer/> 
     </div>
+  
     <div>
-            {/* <Notes/> */}
+            <Notes/>
 </div>
      <div>
             {/* <News/> */}
