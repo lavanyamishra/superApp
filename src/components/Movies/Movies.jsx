@@ -1,41 +1,50 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import userIcon from "../../assets/userIcon.png"
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import "./Movies.css"
 const genre=JSON.parse(localStorage.getItem("userGenere"))
 const Movies = () => {
     const [gener1Data, setGener1Data] = useState([]);
   const [gener2Data, setGener2Data] = useState([]);
   const [gener3Data, setGener3Data] = useState([]);
-const getGener1Data=async()=>{
-await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genere[0]}")
-.then(response => response.json())
-.then(response => setGener1Data(response.results.splice(4,4)))
-.catch(err => console.log(err));
-}
-const getGener2Data=async()=>{
-await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genere[1]}")
-.then((response)=>response.json())
-.then((response)=>setGener2Data(response.results.splice(4, 4)))
-.catch((err)=>console.log(err))
-}
-const getGener3Data=async()=>{
-await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genere[2]}")
-.then((response)=>response.json())
-.then((response)=>setGener3Data(response.results.splice(4, 4)))
-.catch((err)=>console.log(err))
-}
-getGener1Data();
-getGener2Data();
-getGener3Data();
+useEffect(() => {
+    const getGenre1Data = async () => {
+      await fetch(
+        `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[0]}`
+      )
+        .then((response) => response.json())
+        .then((response) => setGener1Data(response.Search.splice(4, 4)))
+        .catch((err) => console.error(err));
+    };
+    const getGenre2Data = async () => {
+      await fetch(
+        `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[1]}`
+      )
+        .then((response) => response.json())
+        .then((response) => setGener2Data(response.Search.splice(4, 4)))
+        .catch((err) => console.error(err));
+    };
+    const getGenre3Data = async () => {
+      await fetch(
+        `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[2]}`
+      )
+        .then((response) => response.json())
+        .then((response) => setGener3Data(response.Search.splice(4, 4)))
+        .catch((err) => console.error(err));
+    };
+
+    getGenre1Data();
+    getGenre2Data();
+    getGenre3Data();
+  }, []);
 
 
   return (
     <div className="entertainment_container">
       <div className="user">
         <h3>Super app</h3>
-        <Link to="/home">
+        <Link to="/Browse">
           <img src={userIcon} alt="user" />
         </Link>
       </div>

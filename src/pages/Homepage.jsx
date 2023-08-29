@@ -5,7 +5,8 @@ import Form from '../components/home/form'
 const HomePage = ()=>{
   return(
   
-      <div style={{display:"flex"}}>
+      <div style={{display:"flex"}
+      }>
       <Banner/>
       <Form/>
       </div>

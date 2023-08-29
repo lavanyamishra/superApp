@@ -9,10 +9,14 @@
    
     
 }
+.banner{
+    width: 50vw;
+    height:50vh;
+}
 
 .image1{
     width: 50vw;
-    height: 100vh;
+    height:100vh;
  
 }
 .top{

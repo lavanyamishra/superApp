@@ -27,6 +27,7 @@ const Category = () => {
           
         
         }
+        // const errorhandle=()=>{}
       
   return (
     <div className="category_main">
