@@ -1,9 +1,9 @@
 .body{
-    background:  #1E1E1E;
+    background:  black;
     color: white;
-    width: 50vw;
-    min-height: 100vh;
-    padding: 6vw;
+    max-height: 100vh;
+    padding: 6vh 0 0 6vw;
+    
     box-sizing: border-box;
     text-align: center;
     
@@ -16,13 +16,13 @@
 .body .super{
     color:  #72DB73;
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 form input{
     display: block;
-    margin: 16px auto;
+    margin: 10px auto;
     padding: 12px;
-    width: 70%;
+    width: 60%;
     background-color:#292929;
     border: none;
     border-radius: 6px;

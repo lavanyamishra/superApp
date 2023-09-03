@@ -10,13 +10,16 @@
     
 }
 .banner{
-    width: 50vw;
-    height:50vh;
+    width: 40vw;
+    height:100vh;
 }
 
 .image1{
+    position: absolute;
+    margin: 0;
     width: 50vw;
     height:100vh;
+    top: 0;
  
 }
 .top{

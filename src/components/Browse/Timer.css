@@ -1,6 +1,6 @@
 .timer_main {
     width: 60vw;
-    height: 30vh;
+    height: 40vh;
   box-sizing: border-box;
     position: absolute;
     margin-top: 6px;
@@ -12,11 +12,11 @@
     justify-content: space-evenly;
   }
   .timer {
-    width: 40%;
+    width: 50%;
     height: 100%;
   }
   .timer_container {
-    margin: 0.5rem auto;
+    margin: 1rem auto;
     width: 11rem;
     height: 11rem;
     border-radius: 50%;
@@ -28,5 +28,6 @@
   }
   .timer_container p {
     color: white;
+   
   }
  

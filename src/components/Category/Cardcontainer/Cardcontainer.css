@@ -1,0 +1,8 @@
+.Card-container{
+    display: grid;
+    grid-template-columns: repeat(3,10rem);
+    grid-template-rows: repeat(3,10rem); 
+   
+    margin-left: 12vw;
+    padding-top: 50px;
+}

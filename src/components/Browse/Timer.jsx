@@ -106,14 +106,15 @@ const Timer = () => {
              isPlaying={timerIsStart ? true : false}
              duration={totalInputTimeInSeconds}
              colors={["#FF6A6A"]}
+            //  size={"12rem"}
           >
             {({ remainingTime }) => <p> {showTimer(time)}</p>}
           </CountdownCircleTimer>
         </div>
       </div>
-      <div style={{width:"35vw", textAlign:"center"}}>
+      <div style={{width:"60vw", textAlign:"center"}}>
                 <div style={{color:"white",display:"flex", fontSize:"2rem", justifyContent:"space-evenly"}}>
-                    <div style={{textAlign:"center", padding:"6px"}}>
+                    <div style={{textAlign:"center"}}>
                         <p>Hours</p>
                         <img style={{width:"20px",height:"20px",marginBottom:"1rem"}} onClick={increaseHour}   src={Up} alt=''/>
                         <p>{inputHour}</p>
@@ -132,7 +133,7 @@ const Timer = () => {
                         <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={decreaseSecond}  src={down} alt=''/>
                     </div>
                 </div>
-                <div onClick={()=>setTimerIsStart((prev)=>!prev)} className='btn' style={{background:"#FF6A6A", borderRadius:"12px", padding:"6px", color:"white", textAlign:"center", width:"22rem",marginLeft:"5rem",marginBottom:"0.5rem"}}>
+                <div onClick={()=>setTimerIsStart((prev)=>!prev)} className='btn' style={{background:"#FF6A6A", borderRadius:"12px", padding:"6px", color:"white", textAlign:"center", width:"22rem",marginLeft:"5rem",marginBottom:"1rem"}}>
                     {timerIsStart?<p>Pause</p>:<p>Start</p>}
                 </div>
             </div>

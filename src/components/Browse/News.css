@@ -7,13 +7,13 @@
     justify-content: center;
     position: absolute;
     top: 1rem;
-    left: 64rem;
+    left: 53rem;
   
    
 
   }
   .news_section {
-    height: 88vh;
+    height: 85vh;
     width: 28vw;
     border-radius: 1rem;
     display: flex;
@@ -31,10 +31,10 @@
   
   .news_des {
     height: 20vh;
-    width: 28vw;
+    width: 24.5vw;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
-    padding: 1rem 3rem 0 1rem;
+    padding: 1rem 2rem 0 1rem;
     z-index: 1;
   }
   .news_des h1 {
@@ -76,7 +76,7 @@
       height: 25vh;
     }
     .news_des {
-      width: 100%;
+      width: 90%;
       height: 12vh;
     }
     .news_des h1 {

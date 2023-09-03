@@ -12,7 +12,7 @@ const Info = () => {
 <div style={{display:"flex",flexDirection:"column",gap:"12px"}}>
             <p style={{color:'white',fontSize:"2rem"}}>{info.name}</p>
             <p style={{color:'white',fontSize:"1.5rem"}}>{info.email}</p>
-            <p style={{color:'white',fontSize:"3rem"}}>{info.username}</p>
+            <p style={{color:'white',fontSize:"2.7rem"}}>{info.username}</p>
            
             <div className="selected_categorie">
           <div className="selected_genere">

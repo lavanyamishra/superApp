@@ -28,7 +28,7 @@ const Browse = () => {
         </div>
 
         </div>
-        <button style={{width:"8rem",position:"absolute",bottom:"2vh",right:"6vw",background:"green",border:"none",color:"white",padding:"8px",borderRadius:"12px"}} onClick={handleClick}>Browse</button>
+        <button style={{width:"8rem",position:"absolute",bottom:"0vh",right:"4vw",background:"green",border:"none",color:"white",padding:"8px",borderRadius:"12px"}} onClick={handleClick}>Browse</button>
    </div>
   )
 }

@@ -10,7 +10,7 @@ const Notes = ()=>{
     }
     return(
       
-       <div style={{color:"white",background:"#F1C75B",width:"24vw", position:"absolute" ,top:"1.5rem",left:"35rem", borderRadius:"12px",padding:"6px"}}>
+       <div style={{color:"white",background:"#F1C75B",width:"24vw", position:"absolute" ,top:"1.3rem",left:"30rem", borderRadius:"12px",padding:"6px"}}>
         <p style={{color:"black",fontSize:"2rem"}}>All notes</p>
         <textarea style={{width:"24vw", height:"54vh",margin:"auto", border:"none",background:"transparent", overflowY:"auto",resize:"none"}} value={text} onChange={(e)=>handleChange(e)}/>
         </div>
