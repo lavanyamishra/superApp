@@ -106,34 +106,34 @@ const Timer = () => {
              isPlaying={timerIsStart ? true : false}
              duration={totalInputTimeInSeconds}
              colors={["#FF6A6A"]}
-            //  size={"12rem"}
+          
           >
             {({ remainingTime }) => <p> {showTimer(time)}</p>}
           </CountdownCircleTimer>
         </div>
       </div>
-      <div style={{width:"60vw", textAlign:"center"}}>
-                <div style={{color:"white",display:"flex", fontSize:"2rem", justifyContent:"space-evenly"}}>
-                    <div style={{textAlign:"center"}}>
+      <div style={{width:"40vw", textAlign:"center"}}>
+                <div style={{color:"white",display:"flex", fontSize:"1.5rem" ,justifyContent:"space-evenly"}}>
+                    <div style={{textAlign:"center", padding:"6px",marginTop:"1rem"}}>
                         <p>Hours</p>
                         <img style={{width:"20px",height:"20px",marginBottom:"1rem"}} onClick={increaseHour}   src={Up} alt=''/>
                         <p>{inputHour}</p>
-                        <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={decreaseHour}  src={down}alt=''/>
+                        <img style={{width:"20px",height:"20px",position:"relative",top:"0rem" }} onClick={decreaseHour}  src={down}alt=''/>
                     </div>
-                    <div style={{textAlign:"center", padding:"6px"}}>
+                    <div style={{textAlign:"center", padding:"6px",marginTop:"1rem"}}>
                         <p>Minutes</p>
                         <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={increaseMinute}  src={Up}alt=''/>
                         <p>{inputMinutes}</p>
-                        <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={decreaseMinute}  src={down}alt=''/>
+                        <img style={{width:"20px",height:"20px",position:"relative",top:"0rem"}} onClick={decreaseMinute}  src={down}alt=''/>
                     </div>
-                   <div style={{textAlign:"center",padding:"6px"}}>
+                   <div style={{textAlign:"center",padding:"6px",marginTop:"1rem"}}>
                         <p>Seconds</p>
                         <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={increaseSecond}  src={Up}alt=''/>
                         <p>{inputSeconds}</p>
-                        <img style={{width:"20px",height:"20px",marginBottom:"1rem" }} onClick={decreaseSecond}  src={down} alt=''/>
+                        <img style={{width:"20px",height:"20px",position:"relative",top:"0rem" }} onClick={decreaseSecond}  src={down} alt=''/>
                     </div>
                 </div>
-                <div onClick={()=>setTimerIsStart((prev)=>!prev)} className='btn' style={{background:"#FF6A6A", borderRadius:"12px", padding:"6px", color:"white", textAlign:"center", width:"22rem",marginLeft:"5rem",marginBottom:"1rem"}}>
+                <div onClick={()=>setTimerIsStart((prev)=>!prev)} className='btn' style={{background:"#FF6A6A", borderRadius:"12px", padding:"6px", color:"white", textAlign:"center", width:"20rem",height:"1.5rem",marginLeft:"3rem",marginBottom:"2rem"}}>
                     {timerIsStart?<p>Pause</p>:<p>Start</p>}
                 </div>
             </div>

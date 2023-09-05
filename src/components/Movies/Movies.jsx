@@ -8,8 +8,8 @@ const Movies = () => {
     const [gener1Data, setGener1Data] = useState([]);
   const [gener2Data, setGener2Data] = useState([]);
   const [gener3Data, setGener3Data] = useState([]);
-useEffect(() => {
-    const getGenre1Data = async () => {
+  useEffect(() => {
+    const getDataGenre1 = async () => {
       await fetch(
         `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[0]}`
       )
@@ -17,7 +17,7 @@ useEffect(() => {
         .then((response) => setGener1Data(response.Search.splice(4, 4)))
         .catch((err) => console.error(err));
     };
-    const getGenre2Data = async () => {
+    const getDataGenre2 = async () => {
       await fetch(
         `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[1]}`
       )
@@ -25,7 +25,7 @@ useEffect(() => {
         .then((response) => setGener2Data(response.Search.splice(4, 4)))
         .catch((err) => console.error(err));
     };
-    const getGenre3Data = async () => {
+    const getDataGenre3 = async () => {
       await fetch(
         `https://www.omdbapi.com/?i=tt3896198&apikey=d20a227b&s=${genre[2]}`
       )
@@ -34,11 +34,10 @@ useEffect(() => {
         .catch((err) => console.error(err));
     };
 
-    getGenre1Data();
-    getGenre2Data();
-    getGenre3Data();
+    getDataGenre1();
+    getDataGenre2();
+    getDataGenre3();
   }, []);
-
 
   return (
     <div className="entertainment_container">

@@ -9,9 +9,9 @@ const Info = () => {
 <div>
     <img src={Profile} alt="profileimg" />
 </div>
-<div style={{display:"flex",flexDirection:"column",gap:"12px"}}>
+<div style={{display:"flex",flexDirection:"column",objectFit:"contain !important",zIndex:"1"}}>
             <p style={{color:'white',fontSize:"2rem"}}>{info.name}</p>
-            <p style={{color:'white',fontSize:"1.5rem"}}>{info.email}</p>
+            <p style={{color:'white',fontSize:"1rem",}}>{info.email}</p>
             <p style={{color:'white',fontSize:"2.7rem"}}>{info.username}</p>
            
             <div className="selected_categorie">

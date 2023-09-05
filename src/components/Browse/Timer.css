@@ -1,22 +1,22 @@
 .timer_main {
-    width: 60vw;
-    height: 40vh;
+    width: 50vw;
+    height: 30vh;
   box-sizing: border-box;
     position: absolute;
-    margin-top: 6px;
-    padding: 12px;
+    margin-top: 8px;
+    padding: 22px;
     background: #1e2343;
     border-radius: 12px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .timer {
-    width: 50%;
+  /* .timer {
+    width: 10%;
     height: 100%;
-  }
+  } */
   .timer_container {
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     width: 11rem;
     height: 11rem;
     border-radius: 50%;
@@ -28,6 +28,7 @@
   }
   .timer_container p {
     color: white;
+  
    
   }
  

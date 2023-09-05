@@ -14,7 +14,7 @@ const Browse = () => {
   return (
    <div className="main">
     <div className="Section">
-    <div>
+    <div className='timer-area'>
          <Info/>
           <Weather/>
         <Timer/> 
