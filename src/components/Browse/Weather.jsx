@@ -4,20 +4,22 @@ const Weather = () => {
     const[date,setDate]=useState("")
     const[time,setTime]=useState("")
     const [weather, setWeather] = useState(false)
-    const today = new Date();
+    
     useEffect(()=>{
+        const today = new Date();
         const showTime = today.toLocaleTimeString("en-US", {
             hour: "numeric",
             minute: "numeric",
             hour12: true,
           });
     setTime(showTime);
-})
+},[])
 useEffect(()=>{
+    const today = new Date();
     const date =
     today.getMonth() + 1 + "-" + today.getDate() + "-" + today.getFullYear();
 setDate(date);
-})
+},[])
 const getData= async()=>{
     const data=await fetch(
         "https://api.weatherapi.com/v1/current.json?key=b9f9ec7c8d9049b99ec52929231404&q=jaunpur&aqi=no"
