@@ -93,10 +93,7 @@ const Timer = () => {
               }
             }
           }; 
-           const startTimer = () => {
-            setTime(totalInputTimeInSeconds);
-            setTimerIsStart(true);
-          };
+         
 
   return (
       <div className="timer_main">
